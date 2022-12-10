@@ -270,9 +270,51 @@ a {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1260px;
   width: 80%;
   margin: 0 auto;
+}
+
+header {
+  background-image: url("../assets/home-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navBar {
+  position: sticky;
+  top: 40px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+.navBar li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3px;
+  display: inline;
+  margin-right: 10px;
 }
 
 .arrow {
@@ -290,4 +332,8 @@ a {
 .left {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+footer {
+  background-color: #333333;
 }

@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+header {
+    background-image: url("../assets/home-1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+  }
