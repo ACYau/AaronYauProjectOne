@@ -289,6 +289,7 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
 }
 header .wrapper {
   display: -webkit-box;
@@ -303,8 +304,7 @@ header .wrapper {
 }
 
 .navBar {
-  position: sticky;
-  top: 40px;
+  margin-top: 40px;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   text-align: center;
@@ -317,19 +317,79 @@ header .wrapper {
   margin-right: 10px;
 }
 
-.arrow {
+section {
+  padding: 0; /*Removes padding between sections, alternatively can set padding to 0*/
+}
+
+.branding {
+  background-color: #C3DAB7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.branding .brandingImageContainer {
+  height: 50vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.branding .brandingImageContainer .deskPhoto {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.branding .brandingImageContainer .circleText {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.branding .brandingTextContainer {
+  width: 40%;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0 80px 0;
+}
+.branding .brandingTextContainer .textContainer {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.imageNavigation {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.imageNavigation .navigationContent {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+.imageNavigation .imageNavigationPhoto {
+  border-radius: 50%;
+}
+.imageNavigation .arrowButtons {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  background-color: transparent;
+  border: none;
+}
+.imageNavigation .arrowButtons .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
 }
-
-.right {
+.imageNavigation .arrowButtons .right {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-
-.left {
+.imageNavigation .arrowButtons .left {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }

@@ -1,8 +1,7 @@
 @use "variables" as *;
 
 .navBar{
-    position: sticky;
-    top: 40px;
+    margin-top: 40px;
     flex-basis: 30%;
     text-align: center;
     li{
