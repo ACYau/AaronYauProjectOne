@@ -100,3 +100,40 @@ section{
     }
   }
 }
+
+.team{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  .meetOurTeam{
+    flex-basis: 100%;
+    text-align:center;
+    margin: 40px;
+  }
+  ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  li{
+      flex-basis:25%;
+  }
+
+  li:first-child{
+    background-color: $tertiary;
+    text-align: left;
+    padding-top: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    flex-basis:50%;
+  }
+  li:last-child{
+    padding-top: 6.5rem;
+  }
+  img{
+    width:100%;
+    height:auto;
+    display:block;
+    padding: 10px;
+  }
+}
