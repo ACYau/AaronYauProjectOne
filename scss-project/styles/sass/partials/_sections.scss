@@ -37,6 +37,9 @@ section{
 }
 
 .imageNavigation{
+  .wrapper{
+    display: flex;
+  }
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
@@ -118,7 +121,6 @@ section{
   li{
       flex-basis:25%;
   }
-
   li:first-child{
     background-color: $tertiary;
     text-align: left;
@@ -135,5 +137,31 @@ section{
     height:auto;
     display:block;
     padding: 10px;
+  }
+}
+
+.portfolio{
+  display: flex;
+  padding-top: 7rem;
+  .portfolioTextContainer {
+    width: 50%;
+    background-color: $primary;
+    .contentContainer{
+      margin: 0 auto;
+      width: 60%;
+      padding-top: 40%;
+      text-align: center;
+      p{
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    }
+  }
+  .portfolioImageContainer{
+    width: 50%;
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
   }
 }

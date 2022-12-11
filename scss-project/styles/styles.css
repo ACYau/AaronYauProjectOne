@@ -275,36 +275,33 @@ a {
   margin: 0 auto;
 }
 
-header {
-  background-image: url("../assets/home-1.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin-bottom: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
+header img {
+  max-width: 100%;
+  vertical-align: middle;
 }
-header .wrapper {
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(195, 218, 183, 0.08);
+  background-color: #FFFFFF;
+  margin-top: 0;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+.navBar .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.navBar {
-  margin-top: 40px;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
 }
 .navBar li {
   font-family: "Open Sans", sans-serif;
@@ -362,6 +359,11 @@ section {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+}
+.imageNavigation .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .imageNavigation .navigationContent {
   -ms-flex-preferred-size: 70%;
@@ -479,6 +481,108 @@ section {
   padding: 10px;
 }
 
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 7rem;
+}
+.portfolio .portfolioTextContainer {
+  width: 50%;
+  background-color: #C3DAB7;
+}
+.portfolio .portfolioTextContainer .contentContainer {
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 40%;
+  text-align: center;
+}
+.portfolio .portfolioTextContainer .contentContainer p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.portfolio .portfolioImageContainer {
+  width: 50%;
+}
+.portfolio .portfolioImageContainer img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 footer {
   background-color: #333333;
+}
+footer h2 {
+  color: #FFFFFF;
+}
+footer p {
+  color: #FFFFFF;
+}
+footer li {
+  color: #FFFFFF;
+}
+footer .wrapper {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFF;
+}
+footer .wrapper .contactUs h2 {
+  padding-bottom: 1rem;
+}
+footer .wrapper .recentPosts h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+footer .wrapper .recentPosts ul {
+  list-style: initial;
+}
+footer .wrapper .twitterWidget {
+  text-align: right;
+}
+footer .wrapper .twitterWidget h2 {
+  padding-bottom: 1rem;
+}
+footer .wrapper .twitterWidget p {
+  padding-bottom: 1rem;
+}
+footer .wrapper .twitterWidget .emailForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+footer .wrapper .twitterWidget .emailForm input[type=email] {
+  width: 70%;
+  padding: 0.5rem 0.5rem;
+  border: none;
+}
+footer .wrapper .twitterWidget .emailForm input[type=button] {
+  width: 17%;
+  height: 45px;
+  font-size: 20px;
+  background-color: #C3DAB7;
+  background-image: url("../assets/arrow-right-solid.svg");
+  background-size: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+footer .footerBottom {
+  text-align: center;
+  border-top: 2px solid #FFFFFF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+footer .footerBottom h2 {
+  display: inline;
+  margin-right: 1rem;
 }

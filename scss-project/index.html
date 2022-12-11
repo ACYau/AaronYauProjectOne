@@ -14,41 +14,43 @@
 	<!--Imports Stylesheet-->
 	<link rel="stylesheet" href="./styles/styles.css">
 <body>
-	<header>
-		<div class = "wrapper">
-			<nav class = "navBar leftside">
-				<div class = "wrapper">
-					<ul>
-						<li>
-							<a href="#">HOME</a>
-						</li>
-						<li>
-							<a href="#">BLOG</a>
-						</li>
-						<li>
-							<a href="#">PORTFOLIO</a>
-						</li>
-					</ul>
-				</div>
-			</nav> <!--End of Left Nav Elements-->
+	<nav class="navBar">
+		<div class="wrapper">
+			<ul>
+				<li>
+					<a href="#">HOME</a>
+				</li>
+				<li>
+					<a href="#">BLOG</a>
+				</li>
+				<li>
+					<a href="#">PORTFOLIO</a>
+				</li>
+			</ul>
 			<h1> CREATIVE </h1> <!--Website Title-->
-			<nav class = "navBar rightside">
-				<ul>
-					<li>
-						<a href="#">SHOP</a>
-					</li>
-					<li>
-						<a href="#">CONTACT</a>
-					</li>
-					<li>
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</li>
-					<li>
-						<i class="fa-solid fa-bag-shopping"></i>
-					</li>
-				</ul>
-			</nav> <!--End of Right Nav elements -->
-		</div> <!--End of Wrapper-->
+			<ul>
+				<li>
+					<a href="#">SHOP</a>
+				</li>
+				<li>
+					<a href="#">CONTACT</a>
+				</li>
+				<li>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</li>
+				<li>
+					<i class="fa-solid fa-bag-shopping"></i>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<header>
+		<section class = "deskPhoto">
+			<img src="./assets/home-1.jpeg">
+		</section>
+
 	</header> <!--End of Header-->
 	<main>
 		<section class = "branding">
@@ -177,38 +179,79 @@
 			</div>	<!--End of Wrapper-->
 		</section>	<!--End of Company Pros Section-->
 
-		<section class = "Portfolio">
-			<!--Doesn't use wrapper-->
-			<h2>DROP US A LINE</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aut adipisci ea quisquam eius quam vel quas asperiores, quibusdam, et consequatur odio eligendi sint nisi dolorem debitis quo dolores repellat est at laboriosam labore molestias iusto! Provident doloremque modi rem quasi illum ipsam, eligendi ratione facere vero tempore consequuntur! Possimus?</p>
-			<button>
+		<section class = "portfolio">
+			<div class ="portfolioTextContainer">
+				<div class="contentContainer">
+					<h2>DROP US A LINE</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aut adipisci ea quisquam eius quam vel quas asperiores, quibusdam, et consequatur odio eligendi sint nisi dolorem debitis quo dolores repellat est at laboriosam labore molestias iusto! Provident doloremque modi rem quasi illum ipsam, eligendi ratione facere vero tempore consequuntur! Possimus?</p>
+					<button class="portfolioButton">
+						VIEW PORTFOLIO
+					</button>
+				</div>
 
-			</button>
+				
+			</div>
+			<div class = "portfoliotImageContainer">
+				<img src="./assets/home-10.jpeg" alt="Picture of Office Items">
+			</div>
+			
 		</section>	<!--End of Portfolio Section-->
 	</main>
 
 	<footer>
 		<div class = "wrapper">
-			<ul>
-				<h2>CONTACT US</h2>
-				<li>
-					<p>6591 Orchard Street, NY 10002, United States</p>
-				</li>
-				<li>
-					<p>Email: contact@onepro.co</p>
-				</li>
-				<li>
-					<p>Phone 01: +00 (9) 123 3456 789</p>
-				</li>
-				<li>
-					<p>Phone 02: +00 (9) 123 3456 789</p>
-				</li>
-				<li>
-					<p>Fax: +00 (9) 643 6543 898</p>
-				</li>
-			</ul>
-			<ul></ul>
-			<ul></ul>
+			<div class="contactUs">
+				<ul>
+					<h2>CONTACT US</h2>
+					<li>
+						<p>6591 Orchard Street, NY 10002, United States</p>
+					</li>
+					<li>
+						<p>Email: contact@onepro.co</p>
+					</li>
+					<li>
+						<p>Phone 01: +00 (9) 123 3456 789</p>
+					</li>
+					<li>
+						<p>Phone 02: +00 (9) 123 3456 789</p>
+					</li>
+					<li>
+						<p>Fax: +00 (9) 643 6543 898</p>
+					</li>
+				</ul>
+			</div>
+			<div class="recentPosts">
+				<ul>
+					<h2>RECENT POSTS</h2>
+					<li>
+						<p>Conversion hackathon partner</p>
+					</li>
+					<li>
+						<p>Network channels entrepreneur</p>
+					</li>
+					<li>
+						<p>Return on investment creative</p>
+					</li>
+					<li>
+						<p>Assets intereaction design venture</p>
+					</li>
+					<li>
+						<p>Infographic learning curve</p>
+					</li>
+				</ul>
+			</div>
+			<div class="twitterWidget">
+				<h2>TWITTER WIDGET</h2>
+				<p>Signup for emails and notifications below</p>
+				<form class = "emailForm">
+					<input type="email" id="email" name="email" placeholder="Enter your email">
+					<input type="button" value="">
+				</form>
+			</div>
+		</div>
+		<div class = "footerBottom">
+			<h2>C R E A T I V E</h2>
+			<h2>A G E N C Y</h2>
 		</div>
 	</footer>
 </body>

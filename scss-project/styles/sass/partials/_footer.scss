@@ -2,4 +2,74 @@
 
 footer {
     background-color: $quarternary;
+    h2{
+        color: $secondary;
+    }
+    p{
+        color: $secondary;
+    }
+    li{
+        color: $secondary;
+    }
+    .wrapper{
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+        display: flex;
+        justify-content: space-between;
+        color: $secondary;
+        .contactUs{
+            h2{
+                padding-bottom: 1rem;
+            }
+        }
+        .recentPosts{
+            h2{
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            ul{
+                list-style: initial;
+            }
+        }
+        .twitterWidget{
+            text-align: right;
+            h2{
+                padding-bottom: 1rem;
+            }
+            p{
+                padding-bottom: 1rem;
+            }
+            .emailForm{
+                display: flex;
+                justify-content: flex-end;
+                input[type=email]{
+                    width: 70%;
+                    padding: 0.5rem 0.5rem;
+                    border:none;
+                }
+                input[type=button]{
+                    width:17%;
+                    height: 45px;
+                    font-size: 20px;
+                    background-color: $primary;
+                    background-image: url("../assets/arrow-right-solid.svg");
+                    background-size: 1rem;
+                    background-position: center; 
+                    background-repeat: no-repeat;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .footerBottom{
+        h2{
+            display: inline;
+            margin-right: 1rem;
+        }
+        text-align:center;
+        border-top: 2px solid $secondary;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
