@@ -189,7 +189,7 @@ section{
       font-weight: bold;
     }
     span{
-      display: block;
+      display: table;
       padding-bottom: 1rem;
     }
   }
@@ -261,6 +261,7 @@ section{
     justify-content: space-between;
     flex-wrap:wrap;
     .fieldEntries{
+      margin-top: 2rem;
       flex-basis:30%;
       border-bottom: solid 2px $quarternary;
       input{
@@ -271,6 +272,7 @@ section{
         border:none;
       }
     }
+    
     .leaveComment{
       flex-basis:100%;
       textarea{
@@ -293,5 +295,96 @@ section{
         cursor: pointer;
       }
     }
+  }
+}
+
+//Contact Section
+.contactUsTitle{
+  h3{
+    padding-bottom:1rem;
+  }
+  span{
+    display: table;
+    padding-bottom: 2rem;
+  }
+}
+
+.formsOfContact{
+  margin-top: 9rem;
+  .contactDetails{
+    width: 50%;
+  }
+  .wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .phone, .address, .email{
+      margin-top: 3rem;
+      margin-left: 2rem;
+      flex-basis:25%;
+      .fa-solid{
+        font-size: 2rem;
+      }
+    }
+    .phone, .address{
+      border-right: solid 1px $quarternary;
+    }
+  }
+}
+
+.contactSection{
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    .fieldEntries{
+      flex-basis:30%;
+      border-bottom: solid 2px $quarternary;
+      input{
+        width:90%;
+        margin-top: 2rem;
+        text-align: left;
+        padding: 0.5rem;
+        border:none;
+      }
+    }
+    .leaveContactTitle{
+      margin-top:4rem;
+      margin-bottom: 4rem;
+      flex-basis:100%;
+      h2{
+        margin-bottom:2rem;
+      }
+    }
+    .leaveContactDetails{
+      flex-basis:100%;
+      textarea{
+        margin-top: 3rem;
+        resize: none;
+        height: 10rem;
+        width: 100%;
+        border: none;
+        border-bottom: solid 2px $quarternary;
+      }
+      input[type=submit]{
+        height: 2rem;
+        font-weight: bold;
+        text-align:center;
+        width: 10rem;
+        background-color: transparent;
+        border:none;
+        border-bottom: solid 2px $quarternary;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.bottomImage{
+  img {
+    max-width: 100%;
+    vertical-align: middle;
   }
 }
