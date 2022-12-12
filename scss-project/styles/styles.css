@@ -296,6 +296,58 @@ a {
       flex-basis: 100%;
 }
 
+button {
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+button:hover {
+  color: #FFFFFF;
+  background-color: #333333;
+}
+button:focus {
+  color: #FFFFFF;
+  background-color: #333333;
+}
+button.arrowButtons {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  background-color: transparent;
+  border: none;
+}
+button.arrowButtons .arrow {
+  margin-top: 80%;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+button.arrowButtons .arrow:hover {
+  border: solid #C3DAB7;
+  border-width: 0 3px 3px 0;
+}
+button.arrowButtons .arrow:focus {
+  border: solid #C3DAB7;
+  border-width: 0 3px 3px 0;
+}
+button.arrowButtons .right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+button.arrowButtons .left {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
 header img {
   max-width: 100%;
   vertical-align: middle;
@@ -399,26 +451,6 @@ section {
 .imageNavigation .imageNavigationPhoto {
   border-radius: 50%;
 }
-.imageNavigation .arrowButtons {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
-  background-color: transparent;
-  border: none;
-}
-.imageNavigation .arrowButtons .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.imageNavigation .arrowButtons .right {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.imageNavigation .arrowButtons .left {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
 
 .companyQualities {
   background-image: url("../assets/home-4.jpeg");
@@ -503,7 +535,7 @@ section {
 }
 .team img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   padding: 10px;
 }
@@ -514,8 +546,17 @@ section {
   display: flex;
   padding-top: 7rem;
 }
+.portfolio .portfoliotImageContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.portfolio .portfoliotImageContainer img {
+  width: 100%;
+  height: 100%;
+}
 .portfolio .portfolioTextContainer {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   background-color: #C3DAB7;
 }
 .portfolio .portfolioTextContainer .contentContainer {
@@ -527,13 +568,6 @@ section {
 .portfolio .portfolioTextContainer .contentContainer p {
   padding-top: 5%;
   padding-bottom: 5%;
-}
-.portfolio .portfolioImageContainer {
-  width: 50%;
-}
-.portfolio .portfolioImageContainer img {
-  max-width: 100%;
-  vertical-align: middle;
 }
 
 .creativeAgency .directory {
