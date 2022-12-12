@@ -21,6 +21,22 @@ h2{
     letter-spacing: 1.8px;
 }
 
+h3{
+    font-family: $headerFont;
+    font-size:3rem;
+    color: $quarternary;
+    line-height: 1.2rem;
+    letter-spacing: 1.8px;
+}
+
+h4{
+    font-family: $headerFont;
+    font-size:2rem;
+    color: $quarternary;
+    line-height: 0.5rem;
+    letter-spacing: 1.8px;
+}
+
 p{
     font-family: $bodyFont;
     font-size: 0.7rem;
