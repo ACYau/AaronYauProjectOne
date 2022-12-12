@@ -892,3 +892,52 @@ footer .footerBottom h2 {
   display: inline;
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  /* style changes when the screen gets smaller */
+  .companyQualities {
+    background-image: none;
+    height: 125vh;
+  }
+  .companyQualities .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: none;
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .companyQualities .wrapper .textContainer {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-right: 0;
+  }
+  .team li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .team li:first-child {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .creativeAgency h3 {
+    line-height: 4rem;
+    margin-bottom: 5rem;
+  }
+  .relatedPosts .sectionGallery li:first-child, .relatedPosts .sectionGallery li:last-child {
+    visibility: collapse;
+  }
+  .contactUsTitle {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* And even smaller */
+}
