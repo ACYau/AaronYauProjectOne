@@ -15,24 +15,34 @@ footer {
         padding-top: 7.5rem;
         padding-bottom: 7.5rem;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         color: $secondary;
         .contactUs{
+            text-align: center;
             h2{
+                text-align: center;
                 padding-bottom: 1rem;
+            }
+            ul{
+                display: inline-block;
+                text-align: left;
             }
         }
         .recentPosts{
+            text-align: center;
             h2{
                 text-align: center;
                 padding-bottom: 1rem;
             }
             ul{
                 list-style: initial;
+                display: inline-block;
+                text-align: left;
             }
         }
         .twitterWidget{
-            text-align: right;
+            text-align: center;
             h2{
                 padding-bottom: 1rem;
             }
@@ -41,7 +51,7 @@ footer {
             }
             .emailForm{
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 input[type=email]{
                     width: 70%;
                     padding: 0.5rem 0.5rem;
@@ -64,6 +74,7 @@ footer {
     }
     .footerBottom{
         h2{
+            letter-spacing: 0.25rem;
             display: inline;
             margin-right: 1rem;
         }

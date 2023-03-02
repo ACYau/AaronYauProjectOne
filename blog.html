@@ -14,44 +14,32 @@
 	<!--Imports Stylesheet-->
 	<link rel="stylesheet" href="./styles/styles.css">
 <body>
-	<nav class="navBar">
+	<div class="navBar">
 		<div class="wrapper">
-			<ul>
-				<li>
-					<a href="index.html">HOME</a>
-				</li>
-				<li>
-					<a href="blog.html">BLOG</a>
-				</li>
-				<li>
-					<a href="#">PORTFOLIO</a>
-				</li>
-			</ul>
-			<h1> CREATIVE </h1> <!--Website Title-->
-			<ul>
-				<li>
-					<a href="#">SHOP</a>
-				</li>
-				<li>
-					<a href="contact.html">CONTACT</a>
-				</li>
-				<li>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</li>
-				<li>
-					<i class="fa-solid fa-bag-shopping"></i>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
+			<nav class = "navMenu">
+				<li><a href="index.html"><p>HOME</p></a></li>
+				<li><a href="blog.html"><p>BLOG</p></a></li>
+				<li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+			</nav>
+			<h1>Creative</h1>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+			<nav class="mobileNavMenu">
+				<ul>
+					<li><a href="index.html"><p>HOME</p></a></li>
+					<li><a href="blog.html"><p>BLOG</p></a></li>
+					<li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+					<li><a href="contact.html"><p>CONTACT</p></a></li>
+				</ul>
+			</nav>
+		</div> <!-- .wrapper end -->
+	</div>
 	<header>
 		<section class = "headerPhoto">
 			<img src="./assets/blog-1.jpeg">
 		</section>
-
 	</header> <!--End of Header-->
-
 	<main>
 		<section class = "creativeAgency">
 			<div class="wrapper">
@@ -186,13 +174,13 @@
 				<div class = "leaveComment">
 					<form class = "commentForms userComment">
 						<textarea id="text" name="text" placeholder="Here goes your comment"></textarea>
-      					<input type="submit" value="Submit Comment">
+      					<input id="formSubmitButton" type="submit" value="Submit Comment">
 					</form>
 				</div>
 			</div>
 		</section>
-	</main>
 
+	</main>
 	<footer>
 		<div class = "wrapper">
 			<div class="contactUs">
@@ -245,9 +233,11 @@
 			</div>
 		</div>
 		<div class = "footerBottom">
-			<h2>C R E A T I V E</h2>
-			<h2>A G E N C Y</h2>
+			<h2>CREATIVE</h2>
+			<h2>AGENCY</h2>
 		</div>
 	</footer>
 </body>
 </html>
+
+<script src="./assets/script.js"></script>

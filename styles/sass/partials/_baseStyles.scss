@@ -1,13 +1,9 @@
 @use "variables" as *;
 
 .wrapper{
-    max-width: 1260px;
+    min-width: 300px;
     width: 80%;
     margin: 0 auto;
-}
-
-.break{
-    flex-basis:100%;
 }
 
 button{
@@ -25,19 +21,21 @@ button{
     &:hover {
         color: $secondary;
         background-color: $quarternary;
+        transform: scale(0.95);
     }
     &:focus {
         color: $secondary;
         background-color: $quarternary;
+        transform: scale(0.95);
     }
     &.arrowButtons{
         flex-basis: 15%;
         background-color: transparent;
         border: none;
         .arrow {
-            margin-top: 80%;
+            margin-top: 120px;
             border: solid black;
-            border-width: 0 3px 3px 0;
+            border-width: 0 9px 9px 0;
             display: inline-block;
             padding: 10px;
             &:hover {

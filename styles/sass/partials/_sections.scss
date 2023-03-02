@@ -10,24 +10,25 @@ section{
   align-items: center;
   flex-wrap: wrap;
   .brandingImageContainer{
-    height: 50vh;
-    position:relative;
-    top:0;
-    left:0;
+    position: relative;
+    text-align:center;
     .deskPhoto{
-      position:absolute;
-      top:40%;
-      left:30%;
+      margin-top: 15%;
+      flex-basis: 100%;
+      max-width:100%;
+      max-height:100%;
     }
     .circleText{
+      width: 30%;
       position:absolute;
-      top: 20%;
       left: 20%;
+      top: 40%;
     }
   }
   .brandingTextContainer{
     width: 40%;
     text-align: center;
+    flex-direction: column;
     justify-content: space-between;
     padding: 40px 0 80px 0;
     .textContainer{
@@ -39,6 +40,7 @@ section{
 .imageNavigation{
   .wrapper{
     display: flex;
+    justify-content: space-evenly;
   }
   margin-top: 100px;
   margin-bottom: 100px;
@@ -53,37 +55,21 @@ section{
 }
 
 .companyQualities{
-  background-image: url("../assets/home-4.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  text-align: center;
   .wrapper{
     display: flex;
-    height: 100vh;
-    margin-right: 0;
-    padding-top: 8.75rem;
-    padding-left: 10rem;
-    .iconContainer{
-      margin-right: 2rem;
-      margin-top: 1rem;
-      li{
-        margin-top:5rem;
-      }
-      .fa-solid{
-        font-size: 2rem;
-        align-items: center;
-        padding: 0.95rem;
-        border-radius: 50%;
-        width: 4rem;
-        height: 4rem;
-        border: solid black 1px;
-      }
+    li{
+      text-align: center;
+      margin: 40px 0;
     }
-    .textContainer{
-      flex-basis: 25%;
-      margin-right: 6rem;
-      li{
-        margin-top: 4.5rem;
-      }
+    .fa-solid{
+      font-size: 2rem;
+      text-align: center;
+      padding: 0.95rem;
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      border: solid black 1px;
     }
   }
 }
@@ -93,9 +79,7 @@ section{
   text-align: center;
   flex-wrap: wrap;
   .meetOurTeam{
-    flex-basis: 100%;
-    text-align:center;
-    margin: 40px;
+    margin: 80px;
   }
   ul{
     display:flex;
@@ -103,18 +87,19 @@ section{
     justify-content: space-between;
   }
   li{
-      flex-basis:25%;
+    flex-basis: 50%;
   }
   li:first-child{
+    flex-basis: 100%;
     background-color: $tertiary;
     text-align: left;
     padding-top: 6rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    flex-basis:50%;
+    padding-bottom: 2rem;
   }
   li:last-child{
-    padding-top: 6.5rem;
+    padding-top: 17.5%;
   }
   img{
     width:100%;
@@ -127,20 +112,19 @@ section{
 .portfolio{
   display: flex;
   padding-top: 7rem;
+  flex-direction: column-reverse;
   .portfoliotImageContainer{
-    flex-basis:50%;
     img{
       width:100%;
       height:100%
     }
   }
   .portfolioTextContainer {
-    flex-basis:50%;
     background-color: $primary;
     .contentContainer{
       margin: 0 auto;
       width: 60%;
-      padding-top: 40%;
+      padding: 40% 0;
       text-align: center;
       p{
         padding-top: 5%;
@@ -158,14 +142,24 @@ section{
   .blogDetails{
     display: flex;
     justify-content: space-between;
+    display:flex;
+    flex-wrap: wrap;
     .author{
-      display:flex;
-      flex-basis:55%;
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-between;
+      .name{
+        flex-basis: 50%;
+      }
       img{
+        height: auto;
         border-radius: 50%;
         height: 5rem;
         margin-right: 1.5rem;
       }
+    }
+    .date, .category, .tags{
+      flex-basis: 50%;
     }
   }
   .blogContent{
@@ -202,11 +196,20 @@ section{
     padding-top: 2rem;
     ul{
       display:flex;
-      margin-right: 5%;
-      justify-content: space-between;
-    }
-    ul:last-child{
-      margin-right:0;
+      flex-direction: column;
+      img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      li img:hover{
+        cursor: pointer;
+        transform: scale(0.95);
+        transition: 0.5s;
+      } &li img:focus{
+        cursor: pointer;
+        transform: scale(0.95);
+        transition: 0.5s;
+      }
     }
   }
 }
@@ -277,6 +280,16 @@ section{
         margin-top: 3rem;
         margin-bottom: 8rem;
         cursor: pointer;
+        &:hover{
+          transform: scale(0.95);
+          transition: 0.5s;
+          background-color: $primary;
+        }
+        &:focus{
+          transform: scale(0.95);
+          transition: 0.5s;
+          background-color: $primary;
+        }
       }
     }
   }
@@ -284,34 +297,26 @@ section{
 
 //Contact Section
 .contactUsTitle{
-  h3{
-    padding-bottom:1rem;
-  }
   span{
     display: table;
-    padding-bottom: 2rem;
   }
 }
 
 .formsOfContact{
-  margin-top: 9rem;
-  .contactDetails{
-    width: 50%;
-  }
   .wrapper{
+    text-align: center;
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     .phone, .address, .email{
+      text-align: center;
+      width: 50%;
       margin-top: 3rem;
       margin-left: 2rem;
-      flex-basis:25%;
       .fa-solid{
         font-size: 2rem;
       }
-    }
-    .phone, .address{
-      border-right: solid 1px $quarternary;
     }
   }
 }
@@ -361,6 +366,16 @@ section{
         margin-top: 3rem;
         margin-bottom: 8rem;
         cursor: pointer;
+        &:hover{
+          transform: scale(0.95);
+          transition: 0.5s;
+          background-color: $primary;
+        }
+        &:focus{
+          transform: scale(0.95);
+          transition: 0.5s;
+          background-color: $primary;
+        }
       }
     }
   }

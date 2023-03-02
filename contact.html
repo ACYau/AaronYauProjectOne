@@ -14,37 +14,27 @@
 	<!--Imports Stylesheet-->
 	<link rel="stylesheet" href="./styles/styles.css">
 <body>
-	<nav class="navBar">
+	<div class="navBar">
 		<div class="wrapper">
-			<ul>
-				<li>
-					<a href="index.html">HOME</a>
-				</li>
-				<li>
-					<a href="blog.html">BLOG</a>
-				</li>
-				<li>
-					<a href="#">PORTFOLIO</a>
-				</li>
-			</ul>
-			<h1> CREATIVE </h1> <!--Website Title-->
-			<ul>
-				<li>
-					<a href="#">SHOP</a>
-				</li>
-				<li>
-					<a href="contact.html">CONTACT</a>
-				</li>
-				<li>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</li>
-				<li>
-					<i class="fa-solid fa-bag-shopping"></i>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
+			<nav class = "navMenu">
+				<li><a href="index.html"><p>HOME</p></a></li>
+				<li><a href="blog.html"><p>BLOG</p></a></li>
+				<li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+			</nav>
+			<h1>Creative</h1>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+			<nav class="mobileNavMenu">
+				<ul>
+					<li><a href="index.html"><p>HOME</p></a></li>
+					<li><a href="blog.html"><p>BLOG</p></a></li>
+					<li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+					<li><a href="contact.html"><p>CONTACT</p></a></li>
+				</ul>
+			</nav>
+		</div> <!-- .wrapper end -->
+	</div>
 	<header>
 		<img src="./assets/contact-1.jpeg">
 		<div class="contactUsTitle wrapper">
@@ -63,24 +53,22 @@
 				<div class ="break"></div>
 				<div class = "phone">
 					<i class="fa-solid fa-mobile-screen-button"></i>
-					<h2>P H O N E</h2>
+					<h2>PHONE</h2>
 					<p>Phone 01: 123, 456 7890</p>
 					<p>Phone 02: 345 678 9101</p>
 				</div>
 				<div class = "address">
 					<i class="fa-solid fa-location-dot"></i>
-					<h2>A D D R E S S</h2>
+					<h2>ADDRESS</h2>
 					<p>6591 Orchard Street, Toronto, Ontario</p>
 				</div>
 				<div class = "email">
 					<i class="fa-solid fa-envelope"></i>
-					<h2>E M A I L</h2>
+					<h2>EMAIL</h2>
 					<p>contact@creative.com</p>
 					<p>info@creative.com</p>
 				</div>
 			</div>
-			
-
 		</section>
 		<section class = "contactSection">
 			<div class ="wrapper">
@@ -113,8 +101,8 @@
 			<section class = "bottomImage">
 				<img src="./assets/contact-2.jpeg" alt="Woman happily speaking on the phone">
 			</section>
-	</main>
 
+	</main>
 	<footer>
 		<div class = "wrapper">
 			<div class="contactUs">
@@ -167,9 +155,11 @@
 			</div>
 		</div>
 		<div class = "footerBottom">
-			<h2>C R E A T I V E</h2>
-			<h2>A G E N C Y</h2>
+			<h2>CREATIVE</h2>
+			<h2>AGENCY</h2>
 		</div>
 	</footer>
 </body>
 </html>
+
+<script src="./assets/script.js"></script>

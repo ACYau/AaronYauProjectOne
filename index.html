@@ -14,44 +14,33 @@
 	<!--Imports Stylesheet-->
 	<link rel="stylesheet" href="./styles/styles.css">
 <body>
-	<nav class="navBar">
+	<div class="navBar">
 		<div class="wrapper">
-			<ul>
-				<li>
-					<a href="index.html">HOME</a>
-				</li>
-				<li>
-					<a href="blog.html">BLOG</a>
-				</li>
-				<li>
-					<a href="#">PORTFOLIO</a>
-				</li>
-			</ul>
-			<h1> CREATIVE </h1> <!--Website Title-->
-			<ul>
-				<li>
-					<a href="#">SHOP</a>
-				</li>
-				<li>
-					<a href="contact.html">CONTACT</a>
-				</li>
-				<li>
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</li>
-				<li>
-					<i class="fa-solid fa-bag-shopping"></i>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
+			<nav class = "navMenu">
+				<li><a href="index.html"><p>HOME</p></a></li>
+				<li><a href="blog.html"><p>BLOG</p></a></li>
+				<li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+			</nav>
+			<h1>Creative</h1>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+			<nav class="mobileNavMenu">
+				<ul>
+					<li><a href="index.html"><p>HOME</p></a></li>
+					<li><a href="blog.html"><p>BLOG</p></a></li>
+					<li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+					<li><a href="contact.html"><p>CONTACT</p></a></li>
+				</ul>
+			</nav>
+		</div> <!-- .wrapper end -->
+	</div>
 
 	<header>
 		<section class = "headerPhoto">
 			<img src="./assets/home-1.jpeg">
 		</section>
-
-	</header> <!--End of Header-->
+	</header>
 	<main>
 		<section class = "branding">
 			<div class = "brandingImageContainer wrapper">
@@ -87,59 +76,35 @@
 
 		<section class = "companyQualities">
 			<div class="wrapper">
-				<div class ="iconContainer leftColumn">
+				<div class ="textContainer">
 					<ul>
 						<li>
-							<i class="fa-solid fa-wand-magic-sparkles"></i>
-						</li>
-						<li>
-							<i class="fa-solid fa-desktop"></i>
-						</li>
-						<li>
-							<i class="fa-solid fa-sliders"></i>
-						</li>
-					</ul>
-				</div>
-				<div class ="textContainer leftColumn">
-					<ul>
-						<li>
+							<i class="fa-solid fa-wand-magic-sparkles"></i>	
 							<h2>UNIQUE DESIGN</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id dolores cum nemo! Eveniet, ullam?</p>
 						</li>
 						<li>
+							<i class="fa-solid fa-desktop"></i>
 							<h2>RETINA READY</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id dolores cum nemo! Eveniet, ullam?</p>
 						</li>
 						<li>
+							<i class="fa-solid fa-sliders"></i>
 							<h2>ADVANCED OPTIONS</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id dolores cum nemo! Eveniet, ullam?</p>
 						</li>
-					</ul>
-				</div>
-				<div class ="iconContainer rightColumn">
-					<ul>
 						<li>
 							<i class="fa-solid fa-map-pin"></i>
-						</li>
-						<li>
-							<i class="fa-solid fa-bag-shopping"></i>
-						</li>
-						<li>
-							<i class="fa-solid fa-face-smile"></i>
-						</li>
-					</ul>
-				</div>
-				<div class ="textContainer rightColumn">
-					<ul>
-						<li>
 							<h2>SEO MARKETING</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id dolores cum nemo! Eveniet, ullam?</p>
 						</li>
 						<li>
+							<i class="fa-solid fa-bag-shopping"></i>
 							<h2>ECOMMERCE READY</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id dolores cum nemo! Eveniet, ullam?</p>
 						</li>
-						<li>		
+						<li>
+							<i class="fa-solid fa-face-smile"></i>
 							<h2>CUSTOMIZABLE</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas id dolores cum nemo! Eveniet, ullam?</p>
 						</li>
@@ -150,7 +115,7 @@
 
 		<section class = "team">
 			<div class = "wrapper">
-				<h2 class = "meetOurTeam">MEET OUR TEAM</h2>
+				<h2 class = "meetOurTeam">MEET OUR TEAM</h2>	
 				<ul>
 					<li>
 						<h2>TEAM PLAYERS</h2>
@@ -176,7 +141,7 @@
 					</li>
 				</ul>
 			</div>	<!--End of Wrapper-->
-		</section>	<!--End of Company Pros Section-->
+		</section>	<!--End of team section-->
 
 		<section class = "portfolio">
 			<div class ="portfolioTextContainer">
@@ -247,9 +212,11 @@
 			</div>
 		</div>
 		<div class = "footerBottom">
-			<h2>C R E A T I V E</h2>
-			<h2>A G E N C Y</h2>
+			<h2>CREATIVE</h2>
+			<h2>AGENCY</h2>
 		</div>
 	</footer>
 </body>
 </html>
+
+<script src="./assets/script.js"></script>

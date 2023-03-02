@@ -7,19 +7,94 @@
         align-items: center;
         vertical-align: middle;
     }
+    z-index: 10;
     position: sticky;
     top: 0;
-    z-index: 10;
-    border-bottom: 1px solid rgba($color: $primary, $alpha: 0.08);
     background-color: $secondary;
     margin-top: 0;
-    flex-basis: 30%;
     text-align: center;
+
+    .hamburger {
+        position: relative;
+        display: block;
+        flex-basis: 50%;
+        max-width: 35px;
+        cursor: pointer;
+        
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: $quarternary;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+    
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+    
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+    
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobileNavMenu{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        z-index: 98;
+        background-color: $secondary;
+        margin-top: 90px;
+        transition: 0.4s;
+    }
+    .mobileNavMenu.is-active {
+        left: 0;
+    }
+    
+    .mobileNavMenu a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        background-color: $primary;
+        color: $quarternary;
+        text-decoration: none;
+    }
+    
+    .mobileNavMenu a:hover, .mobileNavMenu a:focus{
+        background-color: $quarternary;
+        transform: scale(0.95);
+        transition: 0.5s;   
+        p{
+            color: $secondary;
+        }
+    }
+
     li{
         font-family: $bodyFont;
         font-size: 0.7rem;
         letter-spacing: 0.3px;
         display: inline;
         margin-right: 10px;
+    }
+
+    .navMenu{
+        display: none;
     }
 }
