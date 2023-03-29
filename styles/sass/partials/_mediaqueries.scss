@@ -2,6 +2,9 @@
 
 //Tablet Media Query
 @media screen and (min-width:800px) {
+    .homeHeader, .blogHeader{
+        height: 75vh;
+    }
     .creativeAgency{
         .wrapper{
             .blogDetails{
@@ -53,6 +56,9 @@
 
 //Laptop Media Query
 @media screen and (min-width:1280px) {
+    .homeHeader, .blogHeader{
+        height: 100vh;
+    }
     .branding{
         .brandingImageContainer{
           .circleText{

@@ -347,9 +347,32 @@ button.arrowButtons .left {
           transform: rotate(135deg);
 }
 
-header img {
-  max-width: 100%;
+.homeHeader {
+  height: 50vh;
   vertical-align: middle;
+  background-image: url(../assets/home-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blogHeader {
+  height: 50vh;
+  vertical-align: middle;
+  background-image: url(../assets/blog-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactHeader {
+  height: 50vh;
+  height: 28%;
+  vertical-align: middle;
+  background-image: url(../assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .navBar {
@@ -1013,6 +1036,9 @@ footer .footerBottom h2 {
 }
 
 @media screen and (min-width: 800px) {
+  .homeHeader, .blogHeader {
+    height: 75vh;
+  }
   .creativeAgency .wrapper .blogDetails {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1076,6 +1102,9 @@ footer .footerBottom h2 {
   }
 }
 @media screen and (min-width: 1280px) {
+  .homeHeader, .blogHeader {
+    height: 100vh;
+  }
   .branding .brandingImageContainer .circleText {
     width: 20%;
     position: absolute;

@@ -1,8 +1,29 @@
 @use "variables" as *;
 
-header {
-    img {
-        max-width: 100%;
-        vertical-align: middle;
-      }
+.homeHeader{
+  height: 50vh;
+  vertical-align: middle;
+  background-image: url(../assets/home-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blogHeader{
+  height: 50vh;
+  vertical-align: middle;
+  background-image: url(../assets/blog-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactHeader{
+  height: 50vh;
+  height: 28%;
+  vertical-align: middle;
+  background-image: url(../assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
